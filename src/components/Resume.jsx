@@ -1,6 +1,6 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import resumePDF from '../assets/resume.pdf';
 
 function Resume() {
   useEffect(() => {
@@ -31,9 +31,9 @@ function Resume() {
           Resume
         </motion.h2>
         <motion.a
-          href="/resume.pdf"
-          download="VipulMehra_Resume.pdf"
-          className="btn btn-primary btn-lg gap-2"
+          href={resumePDF}
+          download="Vipul_Mehra_Resume.pdf"
+          className="btn btn-primary btn-md gap-2"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}

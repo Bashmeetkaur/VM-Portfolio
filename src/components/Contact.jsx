@@ -36,7 +36,7 @@ function Contact() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Email: <a href="mailto:vipulmehra5178@gmail.com" className="text-primary">vipulmehra5178@gmail.com</a>
+          Email: <a href="mailto:vipulmehra02899@gmail.com" className="text-primary">vipulmehra02899@gmail.com</a>
         </motion.p>
         <motion.p
           className="fs-5"
@@ -44,7 +44,7 @@ function Contact() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Phone: <a href="tel:+1234567890" className="text-primary">(123) 456-7890</a>
+          Phone: <a href="tel:+919971855097" className="text-primary">+91 9971855097</a>
         </motion.p>
         <motion.a
           href="#top"

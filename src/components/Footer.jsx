@@ -27,8 +27,7 @@ function Footer() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        © 2025 Vipul Mehra. All rights reserved. |{' '}
-        <a href="#top" className="text-primary text-decoration-none">Back to Top</a>
+        © 2025 Vipul Mehra. All rights reserved.
       </motion.p>
     </footer>
   );

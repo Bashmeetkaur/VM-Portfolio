@@ -7,9 +7,9 @@ import { SiCplusplus, SiDjango, SiMongodb, SiMysql, SiExpress } from 'react-icon
 
 // Mapping proficiency levels to new labels, colors, and segments
 const proficiencyMap = {
-  Beginner: { label: 'Entry', color: '#f4c430', segments: 1 }, // Warm Yellow
-  Intermediate: { label: 'Intermediate', color: '#4caf50', segments: 2 }, // Soft Green
-  Advanced: { label: 'Advanced', color: '#26a69a', segments: 3 }, // Teal
+  Beginner: { label: 'Entry', color: 'lightblue', segments: 1 }, // Warm Yellow
+  Intermediate: { label: 'Intermediate', color: 'blue', segments: 2 }, // Soft Green
+  Advanced: { label: 'Advanced', color: 'darkblue', segments: 3 }, // Teal
 };
 
 function Skills() {
@@ -53,19 +53,19 @@ function Skills() {
         <div className="row justify-content-center">
           {Object.entries(skills).map(([category, skillList], index) => (
             <div key={index} className="col-md-6 mb-5 text-center">
-              <h4 className="mb-4 text-primary">{category}</h4>
+              <h4 className="mb-4 text-uppercase">{category}</h4>
               <div className="d-flex flex-wrap justify-content-center gap-3">
                 {skillList.map((skill, skillIndex) => {
                   const proficiencyData = proficiencyMap[skill.proficiency] || { label: 'Entry', color: '#f4c430', segments: 1 };
                   return (
                     <div key={skillIndex} className="relative d-flex flex-column align-items-center">
                       <motion.div
-                        className="badge bg-black text-white fs-6 cursor-pointer"
+                        className="badge bg-white text-black fs-6 cursor-pointer"
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: skillIndex * 0.1 }}
                         onClick={() => handleSkillClick(skill)}
-                        whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                        whileHover={{scale: 1.1, transition: { duration: 0.2 } }}
                         style={{ 
                           minWidth: '80px', 
                           minHeight: '80px', 

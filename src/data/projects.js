@@ -9,12 +9,12 @@ export const projects = [
       tech: ["MongoDB", "Express", "React", "Node.js"],
     },
     {
-      title: "Weather App",
+      title: "User Authentication App",
       description:
-        "A weather forecasting app using OpenWeatherMap API. Displays current weather, temperature, and location-based data in a clean UI.",
-      image: "/weather.png",
-      link: "https://github.com/yourusername/weather-app",
-      tech: ["HTML", "CSS", "JavaScript", "API"],
+        "Built a Secure Authentication System Secure User Registration & Login smooth experience.Seamless Frontend-Backend Integration.",      
+        image: "/user.png",
+      link: "https://github.com/vipulmehra5178/User_authentication.git",
+      tech: ["React.js","Node.js","Express.js","MongoDB","JWT"],
     },
     {
       title: "Eats and Treats",
